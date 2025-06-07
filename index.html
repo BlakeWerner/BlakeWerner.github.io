@@ -42,19 +42,25 @@
       }
   
       .form-group {
-        margin-bottom: 1.25rem;
-      }
-  
-      .form-row {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-  
-      .form-row .form-group {
-        flex: 1;
-        min-width: 200px;
-      }
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-row .form-group {
+  width: 47%;
+}
+@media (max-width: 600px) {
+  .form-row .form-group {
+    width: 100%;
+  }
+}
   
       .form-container input {
         width: 100%;
